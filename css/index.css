@@ -134,6 +134,7 @@
 .grab{
     background: #fff;
     padding-bottom: .2rem;
+    overflow: hidden;
 }
 .grabTop{
     height: 1.6rem;
@@ -221,6 +222,7 @@
     bottom: 0;
     text-align: center;
     padding: .2rem 0;
+    z-index: 10000;
 }
 .FixedBom a{
     display: block;
