@@ -1,0 +1,277 @@
+/*头部*/
+.FixedTop{
+    width: 100%;
+    max-width: 650px;
+    height: 1.76rem;
+    background: #ffc001;
+    position: fixed;
+    z-index: 1000;
+}
+.FixedTop a{
+    display: block;
+    top: .2rem;
+}
+.FixedTop .cation {
+    width: .88rem;
+    height: 1.4rem;
+    background: url("../images/feilei.png") no-repeat;
+    background-size: .88rem 1.4rem;
+    position: absolute;
+    left: .5rem;
+}
+.FixedTop .searchs{
+    width: 100%;
+    height: 1.76rem;
+    padding-left: 1.8rem;
+    padding-right: 2.1rem;
+    margin: .28rem 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.FixedTop .search{
+    display: block;
+    width: 100%;
+    height: 1.2rem;
+    line-height: 1.3rem;
+    border-radius: .18rem;
+    background: #FEF1CE;
+    padding-left: 1.2rem;
+    color: #A9A9A9;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.FixedTop .search:before{
+    content: "";
+    width: .5rem;
+    height: .6rem;
+    background: url("../images/search.png") no-repeat;
+    background-size: .5rem .6rem;
+    display: block;
+    position: absolute;
+    left: 2.2rem;
+    top: .6rem;
+}
+.FixedTop .shopping{
+    width: 1.3rem;
+    height: 1.4rem;
+    background: url("../images/gouwu.png") no-repeat;
+    background-size: 1.3rem 1.4rem;
+    position: absolute;
+    right: .5rem;
+}
+.border{
+    height: 1.76rem;
+}
+/*轮播图*/
+.banner img{
+    width: 100%;
+    height: 100%;
+}
+/*分类*/
+.sort{
+    background: #fff;
+    padding: .5rem 0 0 0;
+    border-bottom: 1px solid #F2F2F2;
+}
+.sort li{
+    width: 20%;
+    float: left;
+    text-align: center;
+}
+.sort li a{
+    display: block;
+    width: 100%;
+}
+.sort li img{
+    width: 52%;
+    height: 52%;
+}
+.sort li p{
+    line-height: 1.5rem;
+    padding-bottom: .1rem;
+    color: #7B7F82;
+    font-size: .5rem;
+}
+/*广告*/
+.adver{
+    height: 1.28rem;
+    background: #fff;
+    padding: .4rem 0;
+}
+.adver .title{
+    width: 3rem;
+    height: 1.28rem;
+    background: url("../images/title.png") no-repeat;
+    background-size: 3rem 1.28rem;
+    float: left;
+}
+.adver .line{
+    height: .9rem;
+    border-left: 1px solid #DCDCDC;
+    float: left;
+    margin: .2rem 0 0 .4rem;
+}
+.adver .msg{
+    float: left;
+    height: 1.28rem;
+    overflow: hidden;
+}
+.adver .msg a{
+    display: block;
+    width: 8.66rem;
+    height: 1.28rem;
+}
+.adver .msg span{
+    display: block;
+    margin-left: .8rem;
+    color: #333;
+    font-size: .5rem;
+}
+.adver .msg span:nth-child(2){
+    color: #B8B8B8;
+}
+/*抢购*/
+.grab{
+    background: #fff;
+    padding-bottom: .2rem;
+}
+.grabTop{
+    height: 1.6rem;
+}
+.grabTop .logo{
+    width: 2.77rem;
+    height: 1.6rem;
+    background: url("../images/grab.png") no-repeat;
+    background-size: 2.77rem 1rem;
+    background-position: 0 .26rem;
+}
+.grabTop .tag{
+    font-size: .6rem;
+    position: relative;
+    top: .66rem;
+}
+.grabTop .count{
+    position: relative;
+    top: .7rem;
+}
+.grabTop .count span{
+    float: left;
+}
+.grabTop > a{
+    margin-top: .56rem;
+}
+.grabTop > a > span{
+    display: block;
+    float: left;
+    font-size: .4rem;
+    border-radius: .3rem;
+    background: #FFC001;
+    padding: .02rem .26rem;
+}
+.grabTop > a i{
+    font-size: .4rem;
+    float: left;
+    margin-right: .2rem;
+    margin-top: .06rem;
+    color: #8A8A8A;
+}
+/*抢购*/
+.grab .swiper-containers .swiper-slide a {
+    display: block;
+    width: 100%;
+}
+.grab .swiper-containers .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #dcdcdc;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*固定导航栏*/
+.FixedBom{
+    width: 100%;
+    max-width: 650px;
+    height: 2rem;
+    background: #fff;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    padding: .2rem 0;
+}
+.FixedBom a{
+    display: block;
+    float: left;
+    width: 20%;
+    height: 2rem;
+}
+.FixedBom a:nth-child(1){
+    color: #ffbe11;
+}
+.FixedBom a p:nth-child(1){
+    color: #ff9c0a;
+}
+.FixedBom a i{
+    font-size: 1.1rem;
+}
+.FixedBom a p{
+    padding-top: .1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
