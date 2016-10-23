@@ -173,6 +173,12 @@ img {
 .mr_fl{
     margin-left: .4rem;
 }
+.mr_top{
+    border-bottom: 1px solid #F2F2F2;
+}
+.mr_right{
+    border-right: 1px solid #F2F2F2;
+}
 .bg{
     width: 15rem;
     height: .44rem;

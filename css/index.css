@@ -181,22 +181,83 @@
     display: block;
     width: 100%;
 }
-.grab .swiper-containers .swiper-slide img {
+.grab .b .swiper-slide img {
     width: 100%;
     height: 100%;
     border: 1px solid #dcdcdc;
 }
+/*/\/\/\/\/\/\/\/\/\/*/
+/*超实惠*/
+.pricerite img[src="images/loading.gif"]{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
 
-
-
-
-
-
-
-
-
-
-
+.s1 > a{
+    background: url("../images/147427846372812625.png") no-repeat;
+    background-size: 100% 1.2rem;
+    border-bottom: 1px solid #fff;
+}
+.pricerite a {
+    display: block;
+    width: 100%;
+    height: 1.2rem;
+}
+.pricerite-top{
+    border-bottom: 1px solid #F2F2F2;
+}
+.pricerite-top a,.pricerite-bom a{
+    display: block;
+    width: 50%;
+    height: 50%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.pricerite-top a img,.pricerite-bom a img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.pricerite-bom a{
+    width: 25%;
+}
+/*生活家*/
+.s2 > a{
+    background: url("../images/146768148103752156.png") no-repeat;
+    background-size: 100% 1.2rem;
+    border-bottom: 1px solid #F2F2F2;
+}
+/*好品质*/
+.s3 > a{
+    background: url("../images/146768149464825010.png") no-repeat;
+    background-size: 100% 1.2rem;
+    border-bottom: 1px solid #F2F2F2;
+}
+.s3 .pricerite-bom a,.s4 .pricerite-bom a{
+    width: 50%;
+}
+/*特色好货*/
+.s4 > a{
+    background: url("../images/146768151303980980.png") no-repeat;
+    background-size: 100% 1.2rem;
+    border-bottom: 1px solid #F2F2F2;
+}
+/*热门市场*/
+.s5 > a{
+    background: url("../images/146768153130917144.png") no-repeat;
+    background-size: 100% 1.2rem;
+    border-bottom: 1px solid #F2F2F2;
+}
+.s5 .pricerite-bom a{
+    width: 33.333%;
+}
+/*苏宁金融*/
+.s6 > a{
+    background: url("../images/146768154241823263.png") no-repeat;
+    background-size: 100% 1.2rem;
+    border-bottom: 1px solid #F2F2F2;
+}
 
 
 

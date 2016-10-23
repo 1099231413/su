@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/index.css">
     <script src="js/jquery-1.12.3.min.js"></script>
     <script src="js/swiper.js"></script>
+    <script src="js/jquery.lazyload.min.js"></script>
 </head>
 <body>
     <!--头部-->
@@ -20,7 +21,7 @@
     </div>
     <!--轮播图-->
     <div class="border"></div>
-    <div class="swiper-container banner">
+    <div class="swiper-container banner a">
         <div class="swiper-wrapper">
             <div class="swiper-slide"><a href="#"><img src="images/147677400374490167.jpg" alt=""></a></div>
             <div class="swiper-slide"><a href="#"><img src="images/147678941082174222.jpg" alt=""></a></div>
@@ -34,15 +35,16 @@
         <div class="swiper-pagination"></div>
     </div>
     <script>
-        var swiper = new Swiper('.swiper-container', {
-            loop: true,
-            pagination: '.swiper-pagination',
+        var swiper = new Swiper('.a', {
             nextButton: '.swiper-button-next',
             prevButton: '.swiper-button-prev',
+            pagination: '.swiper-pagination',
             paginationClickable: true,
             centeredSlides: true,
             autoplay: 3000,
-            autoplayDisableOnInteraction: false
+            loop: true,
+            preloadImages: false,
+            lazyLoading: true
         });
     </script>
     <!--分类-->
@@ -102,7 +104,7 @@
             </div>
             <a href="#" class="fr"><span>天天秒杀</span><i class="iconfont">&#xe614;</i></a>
         </div>
-        <div class="swiper-containers">
+        <div class="swiper-container b">
             <div class="swiper-wrapper">
                 <div class="swiper-slide mr_fl"><a href="#"><img src="images/100006860166825950picA_1.png" alt=""></a></div>
                 <div class="swiper-slide"><a href="#"><img src="images/100007081167847818picA_1.png" alt=""></a></div>
@@ -128,73 +130,231 @@
         </div>
     </div>
     <script>
-        var swipers = new Swiper('.swiper-containers', {
+        var swipers = new Swiper('.b', {
             slidesPerView: 3.2,
             paginationClickable: true,
             spaceBetween: 6
         });
     </script>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+    <div class="bg"></div>
+    <!--//////////-->
+    <div class="clearfix">
+        <!--超实惠-->
+        <div class="pricerite s1">
+            <a href="#"></a>
+            <div class="pricerite-top clearfix">
+                <a href="#" class="fl mr_right"><img class="lazy" src="images/loading.gif" data-original="images/147706677575747692.png" alt=""></a>
+                <a href="#" class="fl mr_top"><img src="images/147704963294645480.png" alt=""></a>
+                <a href="#" class="fl"><img src="images/147701237354264557.png" alt=""></a>
+            </div>
+            <div class="pricerite-bom clearfix">
+                <a href="#" class="fl mr_right"><img class="lazy" src="images/loading.gif" data-original="images/147704934247485354.png" alt=""></a>
+                <a href="#" class="fl mr_right"><img class="lazy" src="images/loading.gif" data-original="images/147704309722631884.png" alt=""></a>
+                <a href="#" class="fl mr_right"><img class="lazy" src="images/loading.gif" data-original="images/147713998251362842.png" alt=""></a>
+                <a href="#" class="fl mr_right"><img class="lazy" src="images/loading.gif" data-original="images/147701894040985752.png" alt=""></a>
+            </div>
+        </div>
+        <script>
+            $(function() {
+                $(".s1 img.lazy").lazyload({
+                    event : "sporty"
+                });
+            });
+            $(window).bind("load", function() {
+                var timeout = setTimeout(function() {
+                    $(".s1 img.lazy").trigger("sporty")
+                }, 3000);
+            });
+        </script>
+        <div class="bg"></div>
+        <!--生活家-->
+        <div class="pricerite s2">
+            <a href="#"></a>
+            <div class="pricerite-top clearfix">
+                <a href="#" class="fl mr_right"><img class="lazy" src="images/loading.gif" data-original="images/147703687539064216.png" alt=""></a>
+                <a href="#" class="fl"><img class="lazy" src="images/loading.gif" data-original="images/147703435402017547.png" alt=""></a>
+            </div>
+            <div class="pricerite-bom clearfix">
+                <a href="#" class="fl mr_right"><img class="lazy" src="images/loading.gif" data-original="images/147704934247485354.png" alt=""></a>
+                <a href="#" class="fl mr_right"><img class="lazy" src="images/loading.gif" data-original="images/147704309722631884.png" alt=""></a>
+                <a href="#" class="fl mr_right"><img class="lazy" src="images/loading.gif" data-original="images/147713998251362842.png" alt=""></a>
+                <a href="#" class="fl mr_right"><img class="lazy" src="images/loading.gif" data-original="images/147701894040985752.png" alt=""></a>
+            </div>
+        </div>
+        <script>
+            $(function() {
+                $(".s2 img.lazy").lazyload({
+                    event : "sporty"
+                });
+            });
+            $(window).bind("load", function() {
+                var timeout = setTimeout(function() {
+                    $(".s2 img.lazy").trigger("sporty")
+                }, 4000);
+            });
+        </script>
+        <div class="bg"></div>
+        <!--好品质-->
+        <div class="pricerite s3">
+            <a href="#"></a>
+            <div class="pricerite-top clearfix">
+                <a href="#" class="fl mr_right"><img class="lazy" src="images/loading.gif" data-original="images/147703794383092966.png" alt=""></a>
+                <a href="#" class="fl  mr_top"><img class="lazy" src="images/loading.gif" data-original="images/147703993121875833.png" alt=""></a>
+                <a href="#" class="fl"><img src="images/147703993121875833.png" alt=""></a>
+            </div>
+            <div class="pricerite-bom clearfix">
+                <a href="#" class="fl mr_right"><img class="lazy" src="images/loading.gif" data-original="images/147704751353082593.png" alt=""></a>
+                <a href="#" class="fl mr_right"><img class="lazy" src="images/loading.gif" data-original="images/147705396444622546.png" alt=""></a>
+            </div>
+        </div>
+        <script>
+            $(function() {
+                $(".s3 img.lazy").lazyload({
+                    event : "sporty"
+                });
+            });
+            $(window).bind("load", function() {
+                var timeout = setTimeout(function() {
+                    $(".s3 img.lazy").trigger("sporty")
+                }, 4500);
+            });
+        </script>
+        <div class="bg"></div>
+        <!--轮播-->
+        <div class="swiper-container banner c">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><a href="#"><img src="images/147706002042511124.jpg" alt=""></a></div>
+                <div class="swiper-slide"><a href="#"><img src="images/147704900743383069.jpg" alt=""></a></div>
+                <div class="swiper-slide"><a href="#"><img src="images/147692685494936127.jpg" alt=""></a></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <script>
+            var swiper = new Swiper('.c', {
+                pagination: '.swiper-pagination',
+                nextButton: '.swiper-button-next',
+                prevButton: '.swiper-button-prev',
+                loop: true,
+                paginationClickable: true,
+                centeredSlides: true,
+                autoplay: 2500,
+                autoplayDisableOnInteraction: false
+            });
+        </script>
+        <div class="bg"></div>
+        <!--特色好货-->
+        <div class="pricerite s4">
+            <a href="#"></a>
+            <div class="pricerite-top clearfix">
+                <a href="#" class="fl mr_right"><img class="lazy" src="images/loading.gif" data-original="images/147591287836634556.png" alt=""></a>
+                <a href="#" class="fl  mr_top"><img class="lazy" src="images/loading.gif" data-original="images/147703993121875833.png" alt=""></a>
+                <a href="#" class="fl"><img class="lazy" src="images/loading.gif" data-original="images/147703993121875833.png" alt=""></a>
+            </div>
+            <div class="pricerite-bom clearfix">
+                <a href="#" class="fl mr_right mr_top"><img class="lazy" src="images/loading.gif" data-original="images/147704751353082593.png" alt=""></a>
+                <a href="#" class="fl mr_right mr_top"><img class="lazy" src="images/loading.gif" data-original="images/147642803144522318.png" alt=""></a>
+                <a href="#" class="fl mr_right"><img class="lazy" src="images/loading.gif" data-original="images/147642803144522318.png" alt=""></a>
+                <a href="#" class="fl mr_right"><img class="lazy" src="images/loading.gif" data-original="images/147705396444622546.png" alt=""></a>
+            </div>
+        </div>
+        <script>
+            $(function() {
+                $(".s4 img.lazy").lazyload({
+                    event : "sporty"
+                });
+            });
+            $(window).bind("load", function() {
+                var timeout = setTimeout(function() {
+                    $(".s4 img.lazy").trigger("sporty")
+                }, 4500);
+            });
+        </script>
+        <div class="bg"></div>
+        <!--轮播-->
+        <div class="swiper-container banner d">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><a href="#"><img src="images/147704102555346245.jpg" alt=""></a></div>
+                <div class="swiper-slide"><a href="#"><img src="images/147704491746628404.jpg" alt=""></a></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <script>
+            var swiper = new Swiper('.d', {
+                pagination: '.swiper-pagination',
+                nextButton: '.swiper-button-next',
+                prevButton: '.swiper-button-prev',
+                loop: true,
+                paginationClickable: true,
+                centeredSlides: true,
+                autoplay: 2000,
+                autoplayDisableOnInteraction: false
+            });
+        </script>
+        <div class="bg"></div>
+        <!--热门市场-->
+        <div class="pricerite s5">
+            <a href="#"></a>
+            <div class="pricerite-top clearfix">
+                <a href="#" class="fl mr_right"><img class="lazy" src="images/loading.gif" data-original="images/147704876133930487.png" alt=""></a>
+                <a href="#" class="fl  mr_top"><img class="lazy" src="images/loading.gif" data-original="images/147704494636285195.png" alt=""></a>
+            </div>
+            <div class="pricerite-bom clearfix">
+                <a href="#" class="fl mr_right mr_top"><img class="lazy" src="images/loading.gif" data-original="images/147704279865476525.png" alt=""></a>
+                <a href="#" class="fl mr_right mr_top"><img class="lazy" src="images/loading.gif" data-original="images/147712365289275745.png" alt=""></a>
+                <a href="#" class="fl mr_right mr_top"><img class="lazy" src="images/loading.gif" data-original="images/147703130041750185.png" alt=""></a>
+                <a href="#" class="fl mr_right mr_top"><img class="lazy" src="images/loading.gif" data-original="images/147704279865476525.png" alt=""></a>
+                <a href="#" class="fl mr_right mr_top"><img class="lazy" src="images/loading.gif" data-original="images/147712365289275745.png" alt=""></a>
+                <a href="#" class="fl mr_right mr_top"><img class="lazy" src="images/loading.gif" data-original="images/147703130041750185.png" alt=""></a>
+                <a href="#" class="fl mr_right mr_top"><img class="lazy" src="images/loading.gif" data-original="images/147704279865476525.png" alt=""></a>
+                <a href="#" class="fl mr_right mr_top"><img class="lazy" src="images/loading.gif" data-original="images/147712365289275745.png" alt=""></a>
+                <a href="#" class="fl mr_right mr_top"><img class="lazy" src="images/loading.gif" data-original="images/147703130041750185.png" alt=""></a>
+                <a href="#" class="fl mr_right mr_top"><img class="lazy" src="images/loading.gif" data-original="images/147704279865476525.png" alt=""></a>
+                <a href="#" class="fl mr_right mr_top"><img class="lazy" src="images/loading.gif" data-original="images/147712365289275745.png" alt=""></a>
+                <a href="#" class="fl mr_right mr_top"><img class="lazy" src="images/loading.gif" data-original="images/147703130041750185.png" alt=""></a>
+            </div>
+        </div>
+        <script>
+            $(function() {
+                $(".s5 img.lazy").lazyload({
+                    event : "sporty"
+                });
+            });
+            $(window).bind("load", function() {
+                var timeout = setTimeout(function() {
+                    $(".s5 img.lazy").trigger("sporty")
+                }, 4700);
+            });
+        </script>
+        <div class="bg"></div>
+        <!--苏宁金融-->
+        <div class="pricerite s6">
+            <a href="#"></a>
+            <div class="pricerite-top clearfix">
+                <a href="#" class="fl mr_right"><img class="lazy" src="images/loading.gif" data-original="images/147694626988019623.png" alt=""></a>
+                <a href="#" class="fl  mr_top"><img class="lazy" src="images/loading.gif" data-original="images/147703867909522651.png" alt=""></a>
+                <a href="#" class="fl"><img class="lazy" src="images/loading.gif" data-original="images/147678273267681701.png" alt=""></a>
+            </div>
+        </div>
+        <script>
+            $(function() {
+                $(".s6 img.lazy").lazyload({
+                    event : "sporty"
+                });
+            });
+            $(window).bind("load", function() {
+                var timeout = setTimeout(function() {
+                    $(".s6 img.lazy").trigger("sporty")
+                }, 4760);
+            });
+        </script>
+        <div class="bg"></div>
+    </div>
 
+    <div class="bg"></div>
+    <div class="bg"></div>
+    <div class="bg"></div>
+    <div class="bg"></div>
+    <div class="bg"></div>
     <!--固定导航栏-->
     <div class="FixedBom">
         <a href="#"><i class="iconfont">&#xe632;</i><p>首页</p></a>
