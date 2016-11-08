@@ -1,0 +1,135 @@
+/*头部*/
+.loginTop{
+    width: 100%;
+    max-width: 650px;
+    height: 1.76rem;
+    line-height: 1.76rem;
+    position: relative;
+    background: #f8f8f8;
+    box-shadow: 0 1px 1px #DCDCDC;
+    text-align: center;
+}
+.loginTop a{
+    display: block;
+    width: 1.5rem;
+    float: left;
+    font-size: .9rem;
+}
+.loginTop span{
+    width: 60%;
+    margin: 0 auto;
+    display: block;
+    font-size: .7rem;
+}
+/*账号密码*/
+.number{
+    margin-top: .66rem;
+}
+.numberLogin{
+    background: #fff;
+    padding-left: .6rem;
+}
+.numberLogin .user,
+.numberLogin .pass
+{
+    height: 1.76rem;
+    line-height: 1.76rem;
+    padding-right: .6rem;
+    position: relative;
+}
+.numberLogin input{
+    padding-left: .4rem;
+    height: 1.76rem;
+    line-height: 7.76rem;
+    width: 84%;
+    position: absolute;
+    font-size: .5rem;
+}
+.numberBox{
+    padding: .5rem .6rem .8rem;
+    position: relative;
+}
+.numberBox input{
+    width: .9rem;
+    height: .9rem;
+}
+.numberBox span{
+    position: absolute;
+    left: 1.9rem;
+    top: .6rem;
+    color: #707070;
+}
+.Login{
+    display: block;
+    height: 1.6rem;
+    line-height: 1.6rem;
+    background: #cacaca;
+    color: #909090;
+    border-radius: .18rem;
+    text-align: center;
+    font-size: .6rem;
+    margin: 0 .6rem;
+}
+.retrieve{
+    height: 1.6rem;
+    line-height: 1.6rem;
+    text-align: right;
+    padding-right: .6rem;
+}
+.retrieve a{
+    color: #707070;
+}
+.register{
+    text-align: center;
+    padding-top: .6rem;
+}
+.register a{
+    display: inline-block;
+    width: 3.4rem;
+    height: 1.2rem;
+    line-height: 1.2rem;
+    border: 1px solid #ffc001;
+    border-radius: 0.18rem;
+    color: #eda200;
+}
+/*底部*/
+.loginBom{
+    position: relative;
+    bottom: -6rem;
+    padding: 0 .5rem;
+    text-align: center;
+}
+.loginBom .border{
+    border-top: 2px solid #dcdcdc;
+}
+.loginBom > span{
+    background: #f2f2f2;
+    color: #353d44;
+    position: relative;
+    padding: 0 .3rem;
+    top: -.34rem;
+}
+.loginBom .link a{
+    display: block;
+    width: 33.333%;
+    height: 3rem;
+    text-align: center;
+}
+.loginBom .link .a1{
+    background: url("../images/hyk.png") center center no-repeat;
+    background-size: .92rem .68rem;
+}
+.loginBom .link .a2{
+    background: url("../images/qq.png") center center no-repeat;
+    background-size: .92rem;
+}
+.loginBom .link .a3{
+    background: url("../images/epp.png") center center no-repeat;
+    background-size: .92rem;
+}
+.loginBom .link p{
+    height: 4rem;
+    line-height: 3.4rem;
+    padding-top: 1.4rem;
+    color: #909090;
+}

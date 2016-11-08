@@ -1,0 +1,96 @@
+/*头部*/
+.searchTop{
+    width: 100%;
+    max-width: 650px;
+    height: 1.76rem;
+    line-height: 1.76rem;
+    position: relative;
+    background: #fff;
+    box-shadow: 0 1px 1px #DCDCDC;
+}
+.searchTop > a{
+    position: absolute;
+    display: block;
+    width: 1.5rem;
+}
+.searchTop .return{
+    font-size: .9rem;
+    left: 0;
+}
+.searchTop .case{
+    width: 100%;
+    height: 1.76rem;
+    padding-left: 1.5rem;
+    padding-right: 2.1rem;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.searchTop .case form{
+    width: 100%;
+    height: 1.2rem;
+    line-height: 1.3rem;
+    border-radius: .18rem;
+    background: #EEEEEE;
+    color: #A9A9A9;
+    position: relative;
+    top: .3rem;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.searchTop .case form:before{
+    content: "";
+    width: .48rem;
+    height: .48rem;
+    background: url(../images/search-icon3.png) no-repeat;
+    background-size: .48rem .48rem;
+    display: block;
+    position: absolute;
+    left: .3rem;
+    top: .35rem;
+    z-index: 100000;
+}
+.searchTop .case input{
+    width: 100%;
+    height: 1.2rem;
+    position: absolute;
+    background: #EEEEEE;
+    border-radius: .18rem;
+    text-indent: 1rem;
+    font-size: .6rem;
+}
+.searchTop .seek{
+    right: 0;
+    top: 0;
+    padding-right: .4rem;
+    font-size: .6rem;
+}
+/*热门搜索*/
+.main{
+    background: #fff;
+    min-height: 24.88rem;
+}
+.main dt{
+    height: .96rem;
+    line-height: .96rem;
+    color: #999;
+}
+.main dl{
+    padding: .8rem .56rem;
+}
+.main dd{
+    width: 100%;
+}
+.main dd a{
+    float: left;
+    width: 31.5%;
+    height: 1.2rem;
+    line-height: 1.2rem;
+    background: #F2F2F2;
+    margin: .4rem 2.7% 0 0;
+    border-radius: .18rem;
+    color: #353d44;
+    font-size: .52rem;
+}
+.main dd a:nth-child(3n+0){
+    margin-right: 0;
+}

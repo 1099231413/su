@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>登录---我的作品</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/fixed.css">
+    <script src="js/jquery-1.12.3.min.js"></script>
+    <script src="js/superplaceholder.min.js"></script>
+</head>
+<body>
+    <!--头部-->
+    <div class="loginTop">
+        <a href="index.html" class="iconfont">&#xe619;</a>
+        <span>登录</span>
+    </div>
+    <!--账号密码-->
+    <div class="number">
+        <form action="">
+            <div class="numberLogin">
+                <div class="user">
+                    <lable>账号</lable>
+                    <input type="username" id="inp1" value="" placeholder="手机号/邮箱/用户名/门店会员卡">
+                </div>
+                <div class="mr_top"></div>
+                <div class="pass">
+                    <lable>密码</lable>
+                    <input type="password" id="inp2" value="" placeholder="6-20位数字、字母或符号组合">
+                </div>
+            </div>
+            <div class="numberBox">
+                <input type="checkbox" value="">
+                <span>两周内免登录</span>
+            </div>
+            <a href="javascript:void(0)" class="Login" id="Login">登录</a>
+            <p class="retrieve"><a href="#">找回密码</a></p>
+            <p class="register"><a href="#">立即注册</a></p>
+        </form>
+    </div>
+    <!--底部-->
+    <div class="loginBom">
+        <div class="border"></div>
+        <span>其他登录方式</span>
+        <div class="link clearfix">
+            <a href="#" class="a1 fl"><p>门店会员卡</p></a>
+            <a href="#" class="a2 fl"><p>QQ</p></a>
+            <a href="#" class="a3 fl"><p>易支付</p></a>
+        </div>
+    </div>
+    <!--固定导航栏-->
+    <div class="FixedBom">
+        <a href="index.html"><i class="iconfont">&#xe632;</i><p>首页</p></a>
+        <a href="classify.html"><i class="iconfont">&#xe649;</i><p>分类</p></a>
+        <a href="list.html"><i class="iconfont">&#xe71d;</i><p>必抢清单</p></a>
+        <a href="login.html" class="active"><i class="iconfont">&#xe637;</i><p>我的易购</p></a>
+        <a href="new.html"><i class="iconfont">&#xe616;</i><p>新人大红包</p></a>
+    </div>
+</body>
+</html>
+<!--账号密码-->
+<script>
+    superplaceholder({
+        el: inp1,
+        sentences: [ '手机号/邮箱/用户名/门店会员卡','新用户请注册', '新用户下载app有大礼包'],
+        options: {
+            letterDelay: 66,
+            loop: true,
+            startOnFocus: false
+        }
+    })
+    superplaceholder({
+        el: inp2,
+        sentences: [ '6-20位数字、字母或符号组合','新用户请注册', '新用户下载app有大礼包'],
+        options: {
+            letterDelay: 66,
+            loop: true,
+            startOnFocus: false
+        }
+    })
+</script>

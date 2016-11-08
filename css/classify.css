@@ -1,0 +1,61 @@
+/*头部*/
+.searchTop{
+    width: 100%;
+    max-width: 650px;
+    height: 1.76rem;
+    line-height: 1.76rem;
+    position: relative;
+    background: #F8F8F8;
+    box-shadow: 0 1px 1px #DCDCDC;
+}
+.searchTop > a{
+    position: absolute;
+    display: block;
+    width: 1.5rem;
+}
+.searchTop .return{
+    font-size: .9rem;
+    left: 0;
+}
+.searchTop .case{
+    width: 100%;
+    height: 1.76rem;
+    padding-left: 1.5rem;
+    padding-right: .6rem;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.searchTop .case form{
+    width: 100%;
+    height: 1.2rem;
+    line-height: 1.3rem;
+    border-radius: .18rem;
+    background: #EEEEEE;
+    color: #A9A9A9;
+    position: relative;
+    top: .3rem;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.searchTop .case form:before{
+    content: "";
+    width: .48rem;
+    height: .48rem;
+    background: url(../images/search-icon3.png) no-repeat;
+    background-size: .48rem .48rem;
+    display: block;
+    position: absolute;
+    left: .3rem;
+    top: .35rem;
+    z-index: 100000;
+}
+.searchTop .case input{
+    width: 100%;
+    height: 1.2rem;
+    position: absolute;
+    border-radius: .18rem;
+    text-indent: 1rem;
+    font-size: .6rem;
+    border: 1px solid #ccc;
+    color: #CACACA;
+}

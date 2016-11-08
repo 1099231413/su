@@ -137,6 +137,7 @@ em, i {
 /*点击的按钮的蓝色边框清除*/
 input, button {
     outline-style: none;
+    border: none;
 }
 img {
     max-width: 100%;
@@ -167,7 +168,7 @@ img {
     max-width: 15rem
 }
 /*居中*/
-.tc {
+.ct {
     text-align: center
 }
 .mr_fl{

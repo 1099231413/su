@@ -1,0 +1,23 @@
+/*头部*/
+.loginTop{
+    width: 100%;
+    max-width: 650px;
+    height: 1.76rem;
+    line-height: 1.76rem;
+    position: relative;
+    background: #fff;
+    box-shadow: 0 1px 1px #DCDCDC;
+    text-align: center;
+}
+.loginTop a{
+    display: block;
+    width: 1.5rem;
+    float: left;
+    font-size: .9rem;
+}
+.loginTop span{
+    width: 60%;
+    margin: 0 auto;
+    display: block;
+    font-size: .7rem;
+}

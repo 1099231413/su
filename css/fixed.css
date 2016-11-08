@@ -1,0 +1,30 @@
+/*固定导航栏*/
+.FixedBom{
+    width: 100%;
+    max-width: 650px;
+    height: 2rem;
+    background: #fff;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    z-index: 10000;
+}
+.FixedBom a{
+    display: block;
+    float: left;
+    width: 20%;
+    height: 2rem;
+}
+.FixedBom .active{
+    color: #ffbe11;
+}
+.FixedBom a p:nth-child(1){
+    color: #ff9c0a;
+}
+.FixedBom a i{
+    font-size: .9rem;
+}
+.FixedBom a p{
+    padding-top: .2rem;
+    font-size: .5rem;
+}

@@ -24,7 +24,6 @@
     height: 1.76rem;
     padding-left: 1.8rem;
     padding-right: 2.1rem;
-    margin: .28rem 0;
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
 }
@@ -35,8 +34,9 @@
     line-height: 1.3rem;
     border-radius: .18rem;
     background: #FEF1CE;
-    padding-left: 1.2rem;
     color: #A9A9A9;
+    position: relative;
+    top: .3rem;
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
 }
@@ -48,8 +48,18 @@
     background-size: .5rem .6rem;
     display: block;
     position: absolute;
-    left: 2.2rem;
-    top: .6rem;
+    left: .5rem;
+    top: .3rem;
+    z-index: 10000;
+}
+.FixedTop .search input{
+    width: 100%;
+    height: 1.2rem;
+    border-radius: .18rem;
+    position: absolute;
+    background: #FEF1CE;
+    text-indent: 1.4rem;
+    font-size: .6rem;
 }
 .FixedTop .shopping{
     width: 1.3rem;
@@ -257,83 +267,3 @@
     background-size: 100% 1.2rem;
     border-bottom: 1px solid #F2F2F2;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    /*固定导航栏*/
-.FixedBom{
-    width: 100%;
-    max-width: 650px;
-    height: 2rem;
-    background: #fff;
-    position: fixed;
-    bottom: 0;
-    text-align: center;
-    padding: .2rem 0;
-    z-index: 10000;
-}
-.FixedBom a{
-    display: block;
-    float: left;
-    width: 20%;
-    height: 2rem;
-}
-.FixedBom a:nth-child(1){
-    color: #ffbe11;
-}
-.FixedBom a p:nth-child(1){
-    color: #ff9c0a;
-}
-.FixedBom a i{
-    font-size: 1.1rem;
-}
-.FixedBom a p{
-    padding-top: .1rem;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

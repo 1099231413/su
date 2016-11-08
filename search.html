@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>搜索---我的作品</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/search.css">
+    <script src="js/jquery-1.12.3.min.js"></script>
+    <script src="js/superplaceholder.min.js"></script>
+</head>
+<body>
+    <!--头部-->
+    <div class="searchTop">
+        <a href="index.html" class="return iconfont ct">&#xe619;</a>
+        <div class="case">
+            <form action="">
+                <input id="inp1" type="text" value="" >
+            </form>
+        </div>
+        <a href="#" class="seek ct">搜索</a>
+    </div>
+    <script>
+        superplaceholder({
+            el: inp1,
+            sentences: [ '双十一来了','11-11'],
+            options: {
+                letterDelay: 66,
+                loop: true,
+                startOnFocus: false
+            }
+        })
+    </script>
+    <!--热门搜索-->
+    <div class="main">
+        <dl>
+            <dt>热门搜索</dt>
+            <dd class="clearfix ct">
+                <a href="#">苏泊尔鲜呼吸100</a>
+                <a href="#">方太特权包</a>
+                <a href="#">西门子预订</a>
+                <a href="#">荣耀6X</a>
+                <a href="#">OPPO R9s</a>
+                <a href="#">电脑50抵300</a>
+                <a href="#">冰洗每千减百</a>
+                <a href="#">空气净化器</a>
+                <a href="#">12期免息券</a>
+                <a href="#">行车记录仪</a>
+                <a href="#">烟灶套餐</a>
+                <a href="#">海尔洗衣机</a>
+            </dd>
+        </dl>
+    </div>
+</body>
+</html>
